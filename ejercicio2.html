@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        // arreglo de valores
+        let valores = ["unacadena",3,9,1,10,500,1,10,true]
+        let newArray = [];
+
+        //En este paso se filtran los números del arreglo
+        for (i = 0; i < valores.length; i++){
+            if(typeof valores[i] === "number"){
+                newArray.push(valores[i]);
+            }
+        }
+
+       //Aquí hago el arreglo ...
+       function arreglonum (arreglo){
+           for (i = 0; i< arreglo.length; i++){
+            for (j=i ; j < arreglo.length; j++){
+                if(arreglo[i]< arreglo[j]){
+                    let x = arreglo[j];
+                    arreglo[j] = arreglo[i];
+                    arreglo[i] = x;
+                }
+           }
+       }
+    </script>
+    
+</body>
+</html>

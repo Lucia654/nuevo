@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de la serie Fibonacci</title>
+</head>
+<body>
+    <script>
+
+        // Ejercicio1 serie fibonacci
+        let numfibo = [0,1];
+
+        var numeroDeElementos = function secuenciafibo(limit) {
+            for (let i = 2; i < limit; i++) {
+                numfibo[i] = numfibo[i - 1] + numfibo[i - 2];
+            }
+            return numfibo;
+        }
+        //En este paso, se ingresa el número de elementos que se desea ver de la serie Fibonacci
+        console.log(numeroDeElementos(10));
+    </script>
+</body>
+</html>
