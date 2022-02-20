@@ -7,12 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let palabras = 'una palabra, dos palabras, tres palabras';
+<script>
+    let palabra = "hola.mundo";
+    console.log(palabra.length);
 
-for (let palabras = 0; palabras < 5; palabras++){
-    // se ejecuta el conteo
-    console.log('aumenta una palabra más')}
-    </script>
+    let otro = 0;
+    for (x = 0; x < palabra.length; x++){
+        if(palabra[x] === '.'){
+            break;
+        }
+        otro = otro + 1;
+        
+    }
+    console.log(otro);
+</script>
     </body>
 </html>
