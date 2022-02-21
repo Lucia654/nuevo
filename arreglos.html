@@ -13,13 +13,94 @@
         let carro2 = "volvo";
         let carro3 = "bmw";
 
-    const carros = ["kia", "volvo", "bmw"];
+    const carros = ["kia", "volvo", "bmw", true, 10 ];
     console.log(carros[0]); 
     // [0] corresponde a la primera posición
     console.log(carros[1]);
     console.log(carros[2]);
 
+    const carros2 = new Array("kia", "volvo", "bmw");
+    
 
+
+    for (let i = 0; i < carros.length; i++){
+        // declara una variable que empieza desde 0 let i = 0
+        // imprimira hasta la longitud del arreglo i < carros.lenght
+        // i++ se incrementa de uno en uno
+        console.log( carros[i]    );
+    }
+
+    for (let carroUnico in carros2){
+        // va en automatico a recorrer todo el arreglo
+        // y el valor que haya en carros lo va a depositar en la variable carro 
+        console.log(carros2[carroUnico]);
+    }
+
+
+
+    //Array bidimensional
+    var items = [
+        [1, 2],
+        [3, 4],
+        [5, 6]
+    ]
+
+    // multi dimensionales
+    // tmc = temperaturas medias ciudad
+    // amd = arraymuchasdimensiones
+
+    var tmc0 = new Array(3)
+    tmc0[0] = 12
+    tmc0[1] = 10
+    tmc0[2] = 11
+
+    var tmc1 = new Array (3)
+    tmc1[0] = 5
+    tmc1[1] = 0 
+    tmc1[2] = 2 //imp
+
+    var tmc2 = new Array (3)
+    tmc2[0] = 1
+    tmc2[1] = 2 
+    tmc2[2] = 3
+
+    var amd = new Array (3)
+    amd[0] = tmc0
+    amd[1] = tmc1  
+    amd[2] = tmc2   
+
+    console.log ( amd[1][2]);
+
+
+    // ciclo anidado dentro de otro ciclo
+
+    for (i=0; i < amd.length; i++){
+        //este ciclo va a recorrer desde 0 hasta la longitud amd de uno en uno
+        // y todo lo va a ir guardando en la i, ese va a ser el primer indice
+        for (j=0; j < amd[i].length; j++){
+            // este ciclo recorre el array q está dentro del array 
+
+            console.log("este es i  " + i + " J = " + j);
+
+            console.log( amd[i][j]   );
+        }
+    }
+
+
+        // for in, recorrer un arreglo numerico
+
+    const num = [45, 4, 9, 16, 25];
+    
+    let txt = 0;
+    for (let x in num){
+        txt += num[x];
+        console.log( num[x]);
+    }
+
+
+
+    
+    
 
     </script>
 </body>
